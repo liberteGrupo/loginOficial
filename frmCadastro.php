@@ -1,7 +1,3 @@
-<?php
-include 'conexao/conecta.inc';
-
-?>
 <html>
     <head>
         <meta charset="UTF-8">
