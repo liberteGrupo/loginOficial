@@ -7,11 +7,9 @@ if(isset($_POST['email']) and isset($_POST['senha']))
     $email = $_POST['email'] ;
     $senha = $_POST['senha'] ;
   //echo $email,$senha;
-$query="SELECT * FROM usuarios WHERE EMAIL_USUARIO = '$email'";
+$query = "SELECT * FROM usuarios WHERE EMAIL_USUARIO = '$email'";
 $result= mysql_query($query);
 $totalUsuario = mysql_num_rows($result);
-//$totalLinhas = mysql_num_rows(mysql_query($query));
-//echo $totalUsuario.'<br/>';
 if($totalUsuario === 0){
     echo '<a href=frmLogin.php>Usuario Não Encontrado!</a><br>';
 }  else {
