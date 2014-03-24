@@ -11,10 +11,10 @@
        ?>
         <h3>Formulario Login</h3>       
         <form action="inserirUsuario.php" method="post">
-            Nome :<input type="name" name="nome"> <br>
-            Email :<input type="email" name="email"><br>
-            Senha :<input type="password" name="senha"><br>
-            Confirme Senha :<input type="password" name="confirme_senha">
+             Email :<input type="email" name="email"><br>
+             Nome :<input type="name" name="nome"> <br> 
+             Senha :<input type="password" name="senha"><br>
+             Confirme Senha :<input type="password" name="confirme_senha">
             <br><br>
            <select name='tipoUsuario'>
                 <option name="ADM"> ADM </option>
