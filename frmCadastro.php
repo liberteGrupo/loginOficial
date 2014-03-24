@@ -19,6 +19,9 @@ include 'conexao/conecta.inc';
             Senha :<input type="password" name="senha"><br>
             Confirme Senha :<input type="password" name="confirme_senha">
             <br><br>
+            <select name='opcao'>
+                <option> ADM </option>
+                    <option>RES </option>
             
                      <input type="submit" name="cadastre-se">
    
