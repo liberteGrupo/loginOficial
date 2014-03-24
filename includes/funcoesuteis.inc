@@ -10,8 +10,7 @@ session_destroy();
 }  else {
 /* fazer validadacao para que usuarios x nao entre em  ambiente de usuario y */
     if($tipoUser == 'RES'){
-        include_once 'conexao/conecta.inc';
-       
+        include_once '../conexao/conecta.inc';
     }else{
         include_once '../conexao/conecta.inc';
     }
