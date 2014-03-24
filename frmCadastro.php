@@ -21,8 +21,7 @@
                     <option name="RES">RES </option>
                         
            </select> <br>
-            
-                     <input type="submit" name="logar">
+           <input type="submit" name="logar" >
    
         </form>        
 </body>
