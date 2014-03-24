@@ -3,7 +3,7 @@ include 'conexao/conecta.inc';
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
 $nome = $_POST['nome'];
-$tipoUsuario= $_POST['tipoUsuario'];
+$tipoUsuario = $_POST['tipoUsuario'];
 
 if($senha != $confirmeSenha){
     echo'senha nao confere!';
