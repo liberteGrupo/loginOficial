@@ -18,7 +18,7 @@ session_start();
                     <option>RES </option>       
             </select>
             <br>
-            <a href="frmIncluirUsuario.php"> nao é cadastrado </a>?
+           
             <input type="submit" name="enviar">
         
         
