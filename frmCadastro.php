@@ -2,8 +2,6 @@
 include 'conexao/conecta.inc';
 
 ?>
-
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -16,10 +14,10 @@ include 'conexao/conecta.inc';
   
        ?>
         <h3>Formulario Login</h3>       
-        <form action="login.php" method="post">
-            Email :<input type="email" name="email"><br>
+        <form action="incluirUsuario.php" method="post">
+            Email :<input type="email" name="email"><br><br>
             Senha :<input type="password" name="senha">
-            
+            <br><br>
             
                      <input type="submit" name="cadastre-se">
    
