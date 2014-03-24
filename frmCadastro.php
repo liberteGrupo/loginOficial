@@ -17,6 +17,7 @@ include 'conexao/conecta.inc';
         <form action="inserirUsuario.php" method="post">
             Email :<input type="email" name="email"><br><br>
             Senha :<input type="password" name="senha">
+            Confirme Senha :<input type="password" name="confirme_senha">
             <br><br>
             
                      <input type="submit" name="cadastre-se">
