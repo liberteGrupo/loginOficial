@@ -14,7 +14,7 @@ include 'conexao/conecta.inc';
   
        ?>
         <h3>Formulario Login</h3>       
-        <form action="incluirUsuario.php" method="post">
+        <form action="inserirUsuario.php" method="post">
             Email :<input type="email" name="email"><br><br>
             Senha :<input type="password" name="senha">
             <br><br>
