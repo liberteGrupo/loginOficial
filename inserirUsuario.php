@@ -1,15 +1,14 @@
 <?php
 include 'conexao/conecta.inc';
+
+$email = $_POST['email'];
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
-$nome = $_POST['nome'];
 $tipoUsuario = $_POST['tipoUsuario'];
-$email = $_POST['email'];
+$nome = $_POST['nome'];
 if($senha != $confirmeSenha){
     echo'senha nao confere!';
     echo '<a href=frmCadastro.php> Cadastrar </a>';  
-    
-    
 }else{ 
    
 //$sql = "INSERT INTO usuarios EMAIL_USUARIO='$email',SENHA_USUARIO='$senha' WHERE EMAIL_USUARIO='$email' ";
