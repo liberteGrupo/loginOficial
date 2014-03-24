@@ -8,10 +8,9 @@ include 'conexao/conecta.inc';
     </head>
     <body>
         <?php
-       echo'<h3> Sistem de login </h3>';
+       echo'<h3> Sistema de login </h3>';
         echo '<a href=frmLogin.php>logar <br> </a>';  
         echo '<a href=frmCadastro.php>Cadastro</a>';
         ?>
-        
     </body>
 </html>
