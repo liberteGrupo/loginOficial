@@ -18,11 +18,6 @@ include 'conexao/conecta.inc';
             Email :<input type="email" name="email"><br>
             Senha :<input type="password" name="senha">
             <br>
-            <select name='tipoUsuario'>
-                <option name="ADM"> ADM </option>
-                    <option name="RES">RES </option>
-                        
-            </select>
             <br>
             <input type="submit" name="logar">
             
