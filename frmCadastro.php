@@ -16,11 +16,6 @@
              Senha :<input type="password" name="senha"><br>
              Confirme Senha :<input type="password" name="confirme_senha">
             <br><br>
-           <select name='tipoUsuario'>
-                <option name="ADM"> ADM </option>
-                    <option name="RES">RES </option>
-                        
-           </select> <br>
            <input type="submit" name="logar" >
    
         </form>        
