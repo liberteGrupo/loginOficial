@@ -15,7 +15,7 @@
              Nome :<input type="name" name="nome"> <br> 
              Senha :<input type="password" name="senha"><br>
              Confirme Senha :<input type="password" name="confirme_senha">
-            <br><br>
+            <br>
            <select name='tipoUsuario'>
                <option name="RES" >RES </option>
            </select> <br>
