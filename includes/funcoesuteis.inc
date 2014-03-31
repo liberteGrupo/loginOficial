@@ -8,8 +8,9 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
      session_destroy();
     echo '<script> 
          alert ("Voce nao efetuo o login");
-             </script>'.$link ;
-     echo '<a href=frmLogin.php> Efetuar o Login</a>';
+         location("'.$link .'")   
+</script>';
+     
 }  else {
 /* fazer validadacao para que usuarios x nao entre em  ambiente de usuario y */
     if($tipoUser == 'RES'){
@@ -28,21 +29,24 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
     $tipoUsuario   =  $usuarios['TIPO_USUARIO'];
    if($tipoUsuario  !== $tipoUser){
        session_destroy();
-       echo '<script> 
+          echo '<script> 
          alert ("Acesso negado para o seu tipo de usuario");
-             </script>'.$link ;
+         location("'.$link .'")   
+</script>';
       /// echo "<a href=$link> Acesso Negado para seu tipo de usuario </a>";  
         }elseif($email !== $emailUsuarios){
             session_destroy();
-          echo '<script> 
-            alert("Acesso negado para o email de usuario invalido");
-             </script>'.$link ;
+              echo '<script> 
+         alert ("Acesso negado para o email de usuario invalido");
+         location("'.$link .'")   
+</script>';
         }elseif($senha !== $senhaUsuario)
             {
             session_destroy();
-          echo '<script> 
-         alert ("Acesso negado senha incorreta! ");
-             </script>'.$link ;
+                  echo '<script> 
+         alert ("Acesso negado senha incorreta!");
+         location("'.$link .'")   
+</script>';
            }
         }
    }
