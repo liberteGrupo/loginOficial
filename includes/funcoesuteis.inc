@@ -5,7 +5,9 @@ function  validaAutenticacao($tipoUser,$link)
     session_start();
 if(!isset($_SESSION['email']) or !isset($_SESSION['senha'])){
      session_destroy();
-     echo 'Você não efetou Login<br/>';
+    echo '<script type> 
+         alert ("Voce nao efetuo o login");
+             </script>'.$link ;
      echo '<a href=frmLogin.php> Efetuar o Login</a>';
 }  else {
 /* fazer validadacao para que usuarios x nao entre em  ambiente de usuario y */
@@ -27,15 +29,19 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha'])){
        session_destroy();
        echo '<script type> 
          alert ("Acesso negado para o seu tipo de usuario");
-             </script>' ;
-       echo "<a href=$link> Acesso Negado para seu tipo de usuario </a>";  
+             </script>'.$link ;
+      /// echo "<a href=$link> Acesso Negado para seu tipo de usuario </a>";  
         }elseif($email !== $emailUsuarios){
             session_destroy();
-            echo "<a href=$link> Acesso negado email de usuário invalido</a>";
+          echo '<script type> 
+         alert ("Acesso negado para o email de usuario invalido");
+             </script>'.$link ;
         }elseif($senha !== $senhaUsuario)
             {
             session_destroy();
-            echo "<a href=$link> Acesso negado,Senha nao confere</a>";
+          echo '<script type> 
+         alert ("Acesso negado senha incorreta! ");
+             </script>'.$link ;
            }
         }
    }
