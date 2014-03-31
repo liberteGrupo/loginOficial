@@ -2,7 +2,7 @@
 //session_start();
 echo '<meta charset=utf-8>';
 require 'includes/funcoesuteis.inc';
-validaAutenticacao('RES'.'frmLogin.php');
+validaAutenticacao('RES','frmLogin.php');
 $email =isset($_SESSION['email'])?$_SESSION['email']:null;
 $senha = isset($_SESSION['senha'])?$_SESSION['senha']:null;
 $nomeUsuario = isset($_SESSION['nomeUsuario'])?$_SESSION['nomeUsuario']:null;
