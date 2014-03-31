@@ -15,6 +15,7 @@ $sql = " INSERT INTO usuarios ( NOME_USUARIO,EMAIL_USUARIO, SENHA_USUARIO, TIPO_
     $sql.= " VALUES ('$nome','$email','$senha','$tipoUsuario')";
     if(mysql_query($sql)){
         echo 'Dados inseridos com Sucesso !';
+         echo '<a href=frmLogin.php> Logar </a>';
                           }else{
                               echo mysql_error() . '<br/>'; 
                           }
