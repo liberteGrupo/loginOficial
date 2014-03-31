@@ -8,7 +8,7 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
      session_destroy();
     echo '<script> 
          alert ("Voce nao efetuo o login");
-         location("'.$link .'")   
+         location.href="'.$link .'"   
 </script>';
      
 }  else {
@@ -30,22 +30,22 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
    if($tipoUsuario  !== $tipoUser){
        session_destroy();
           echo '<script> 
-         alert ("Acesso negado para o seu tipo de usuario");
-         location("'.$link .'")   
+          alert("Acesso negado para o seu tipo de usuario");
+          location.href="'.$link .'"   
 </script>';
       /// echo "<a href=$link> Acesso Negado para seu tipo de usuario </a>";  
         }elseif($email !== $emailUsuarios){
             session_destroy();
               echo '<script> 
          alert ("Acesso negado para o email de usuario invalido");
-         location("'.$link .'")   
+         location.href="'.$link .'"   
 </script>';
         }elseif($senha !== $senhaUsuario)
             {
             session_destroy();
                   echo '<script> 
          alert ("Acesso negado senha incorreta!");
-         location("'.$link .'")   
+         location.href="'.$link .'"   
 </script>';
            }
         }
