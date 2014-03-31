@@ -11,7 +11,7 @@ if($senha != $confirmeSenha){
     
 }else{ 
    
-$sql = " INSERT INTO usuarios ( NOME_USUARIO,EMAIL_USUARIO, SENHA_USUARIO)";
+$sql = " INSERT INTO usuarios ( NOME_USUARIO,EMAIL_USUARIO, SENHA_USUARIO,TIPO_USUARIO)";
     $sql.= " VALUES ('$nome','$email','$senha','$tipoUsuario')";
     if(mysql_query($sql)){
         echo 'Dados inseridos com Sucesso !';
