@@ -1,6 +1,6 @@
 <?php
 echo '<meta charset=utf-8>';
-include 'conexao/conecta.inc';
+include_once 'conexao/conecta.inc';
 session_start();
 if(isset($_POST['email']) and isset($_POST['senha']))
     {
@@ -25,6 +25,7 @@ if($senha !== $senhaUsuario){
     $_SESSION['senha'] =  $senha;
     $_SESSION['nomeUsuario']= $array['NOME_USUARIO'];
     mysql_close();
+    
     if($tipoUsuario === 'RES'){
     echo '<script language="Javascript">
 location.href="indexrestrito.php"
