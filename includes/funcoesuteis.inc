@@ -27,7 +27,7 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha'])){
        session_destroy();
        echo '<script type> 
          alert ("Acesso negado para o seu tipo de usuario");
-</script>' ;
+             </script>' ;
        echo "<a href=$link> Acesso Negado para seu tipo de usuario </a>";  
         }elseif($email !== $emailUsuarios){
             session_destroy();
