@@ -27,7 +27,7 @@ include 'conexao/conecta.inc';
             <br>
             <input type="submit" name="logar">
             
-             <a href="frmIncluirUsuario.php"> Cadastre-se </a><br>
+            <a href="frmCadastro.php"> Cadastre-se </a><br>
         </form>
     </body>
 </html>
