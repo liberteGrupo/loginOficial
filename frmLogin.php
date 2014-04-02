@@ -1,6 +1,5 @@
 <?php
 include 'conexao/conecta.inc';
-
 ?>
 <html>
     <head>
