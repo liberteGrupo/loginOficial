@@ -16,9 +16,7 @@
              Senha :<input type="password" name="senha"><br>
              Confirme Senha :<input type="password" name="confirme_senha">
             <br>
-           <select name='tipoUsuario'>
-               <option name="RES" >RES </option>
-           </select> <br>
+            <br>
            <input type="submit" name="logar" >
    
         </form>        
