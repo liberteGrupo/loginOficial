@@ -18,9 +18,10 @@ include 'conexao/conecta.inc';
             Senha :<input type="password" name="senha">
             <br>
             <br>
-            <input type="submit" name="logar">
+            <input type="submit" value="Enviar">
             <br>
             <a href="frmCadastro.php"> Cadastre-se </a><br>
+            <a href="#.php"> Esqueceu sua senha </a><br>
         </form>
     </body>
 </html>
