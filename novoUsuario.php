@@ -14,7 +14,7 @@ if(mysql_query($query)){
        
 }else{
     echo '<script>
-    alert("Não  foi  possivel  seu  cadastro !")
+    alert("Não  foi  possivel registrar seu  cadastro !")
     location.href=index.php
             </script>';
 }
