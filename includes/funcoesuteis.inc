@@ -7,7 +7,7 @@ if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
     {
      session_destroy();
     echo '<script> 
-         alert ("Voce nao efetuo o login");
+         alert ("Voce nao efetuou o login");
          location.href="'.$link .'"   
 </script>';
      
