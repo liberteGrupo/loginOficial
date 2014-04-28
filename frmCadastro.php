@@ -18,7 +18,7 @@
 			   
 					rules:{ 
                                             nome:{
-                                                required:true;
+                                                required:true
                                             },
 						login:{ 
                                                     required: true,
@@ -85,7 +85,7 @@
 					 $("#login").keyup(function() {
                        $('div.loader').hide();
                      });
-			)
+	
             
 	</script>
                 
