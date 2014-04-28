@@ -17,6 +17,9 @@
 			    $('#meu_form').validate({
 			   
 					rules:{ 
+                                            nome:{
+                                                required:true;
+                                            },
 						login:{ 
                                                     required: true,
                                                     remote: 'includes/verificaEmail.php'
@@ -40,6 +43,9 @@
                                         
                                       
 					messages:{
+                                                nome:{ 
+                                                     required: 'Este Campo &eacute; obrigat&oacute;rio' , 
+                                                     },
 						login:{ 
                                                      required: 'Este Campo &eacute; obrigat&oacute;rio' , 
                                                      remote: '<font color="red">Este Login j&aacute; est&aacute; em uso.</font>'},//,
@@ -79,7 +85,7 @@
 					 $("#login").keyup(function() {
                        $('div.loader').hide();
                      });
-			
+			)
             
 	</script>
                 
@@ -90,9 +96,12 @@
     
    
 <h1>Cadastro de Usuário</h1>
-<form id="meu_form" action="NovoFormularioInclusao.php" method="post" >
+<form id="meu_form" action="novoUsuario.php" method="post" >
            
 		<!--Login:<br />-->
+                <label>Digite um Nome</label><br/>
+                <input type="text" name="nome" id="nome" />
+		<br />
                 <label>Digite um email válido</label><br/>
                 <input type="text" name="login" id="login" />
 		<br />
