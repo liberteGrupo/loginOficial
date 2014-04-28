@@ -22,7 +22,7 @@
                                             },
 						login:{ 
                                                     required: true,
-                                                    remote: 'includes/verificaEmail.php'
+                                                    remote: 'includes/verificaemail.php'
                                                     },//,
                                                 conflogin:{
                                                   required: true,
@@ -85,7 +85,7 @@
 					 $("#login").keyup(function() {
                        $('div.loader').hide();
                      });
-	
+			
             
 	</script>
                 
