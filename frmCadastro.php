@@ -90,7 +90,7 @@
     
    
 <h1>Cadastro de Usuário</h1>
-<form id="meu_form" action="login.php" method="post" >
+<form id="meu_form" action="NovoFormularioInclusao.php" method="post" >
            
 		<!--Login:<br />-->
                 <label>Digite um email válido</label><br/>
