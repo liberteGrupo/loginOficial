@@ -1,4 +1,4 @@
-<?php
+l<?php
 echo '<meta charset=utf-8>';
 function  validaAutenticacao($tipoUser,$link)
 {
