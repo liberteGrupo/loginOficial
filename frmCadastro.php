@@ -19,7 +19,7 @@
 					rules:{ 
 						login:{ 
                                                     required: true,
-                                                    remote: 'includes/verificaemail.php'
+                                                    remote: 'includes/verificaEmail.php'
                                                     },//,
                                                 conflogin:{
                                                   required: true,
