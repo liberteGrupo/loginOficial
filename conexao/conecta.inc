@@ -3,7 +3,7 @@ echo '<meta charset=utf-8>';
 $hostName ='localhost';
 $userName = 'root';
 $passHost = '12345678';
-$dbName ='loginOficial3f' ;
+$dbName ='loginoficial3f' ;
 
 $connection = mysql_connect($hostName,$userName,$passHost);
 
