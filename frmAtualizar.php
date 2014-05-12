@@ -19,7 +19,7 @@
            Nome: <input type="text" name="nome" required  value="<?php echo $usuarios['NOME_USUARIO'] ?>"> <br/>
            Senha: <input type="password" name="senha" required value="<?php echo $usuarios['SENHA_USUARIO']?>"> <br/>
            Email: <input type="email" name="email" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
-              <select name="tipo">
+           <select name="tipo" hidden="">
            <?php 
            /*   $tipo = $usuarios['TIPO_USUARIO'];
                if($tipo === 'ADM')
