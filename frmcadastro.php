@@ -108,6 +108,21 @@
                   <label>Confirme o  email</label><br/>
                 <input type="text" name="conflogin" id="conflogin" />
 		<br />
+                     <select name="tipo" hidden="">
+           <?php 
+            $tipo = $usuarios['TIPO_USUARIO'];
+               if($tipo === 'ADM')
+               {
+                   echo '<option selected> ADM </option>';
+                   echo '<option> RES </option>';
+               }
+               else
+               {
+                 echo '<option selected> RES </option>';  
+                 echo '<option> ADM </option>';
+               }
+              ?>
+            </select> <br/>
 		Senha:<br />
 		<input type="password" name="senha" id="senha"/><br />
                 <label>Confirme a Senha</label><br/>
