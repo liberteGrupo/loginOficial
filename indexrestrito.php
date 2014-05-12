@@ -11,5 +11,19 @@ echo'<a href=logout.php>Efetuar Logout</a>';
 /*if($nomeUsuario){    
 echo 'Bem Vindo Srº) '.$nomeUsuario;    
 }*/
+?>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> </title>
+    </head>
+    <body>
+        <?php
+       echo'<h3> <caption>Restrito-Pagina inicial </caption></h3>';
+        echo '<a href=frmLogin.php>logar <br> </a>';  
+        echo '<a href=frmCadastro.php>Cadastro</a>';
+        ?>
+    </body>
+</html>
 
 
