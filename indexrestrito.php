@@ -19,9 +19,9 @@ echo 'Bem Vindo Srº) '.$nomeUsuario;
     </head>
     <body>
         <?php
-       echo'<h3> <caption>Restrito-Pagina inicial </caption></h3>';
-        echo '<a href=frmLogin.php>logar <br> </a>';  
-        echo '<a href=frmCadastro.php>Cadastro</a>';
+       echo'<h3> <caption>Restrito-Paginterar(a inicial </caption></h3>';
+        echo '<a href=frmAtualizar.php>Alterar(Perfil) <br> </a>';  
+
         ?>
     </body>
 </html>
