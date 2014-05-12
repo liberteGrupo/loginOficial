@@ -5,7 +5,7 @@ $email = $_POST['login'];
 $senha = $_POST['senha'];
 $nome = $_POST['nome'];
 $tipoUsuario = 'RES';
-$query = "INSERT INTO usuario (EMAIL_USUARIO,SENHA_USUARIO,NOME_USUARIO,TIPO_USUARIO)";
+$query = "INSERT INTO usuarios (EMAIL_USUARIO,SENHA_USUARIO,NOME_USUARIO,TIPO_USUARIO)";
 $query.= " VALUES ('$email','$senha','$nome','$tipoUsuario')";
 
 if(mysql_query($query)){
