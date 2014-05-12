@@ -20,7 +20,7 @@
            Email: <input type="email" name="email" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
            Confirma Email : <input type="email" name="confirma_email" required><br/>
            Senha: <input type="password" name="senha" required value="<?php echo $usuarios['SENHA_USUARIO']?>"> <br/>
-                     Confirme Senha : <input type="password" name="confirme_senha" > required><br/>
+                     Confirme Senha : <input type="password" name="confirme_senha" required><br/>
            <select name="tipo" hidden="">
            <?php 
             $tipo = $usuarios['TIPO_USUARIO'];
