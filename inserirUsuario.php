@@ -3,8 +3,8 @@ include 'conexao/conecta.inc';
 $email = $_POST['email'];
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
-$tipoUsuario = $_POST['tipoUsuario'];
-$nome = $_POST['nome'];
+$tipoUsuario = $_POST ['tipoUsuario'];
+$nome = $_POST ['nome'];
 if($senha != $confirmeSenha){
     echo'senha nao confere!';
     echo '<a href=frmCadastro.php> Cadastrar </a>';  
