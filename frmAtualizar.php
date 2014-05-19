@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="#">
     </head>    
     <body>
-        <?php
+      <?php
               include 'conexao/conecta.inc';
               $codigo_usuario = $_REQUEST['codigo'];
               //echo '<h1>'.$codigo_usuario.'</h1>';
@@ -14,11 +14,11 @@
               $result = mysql_query($sql);
               $usuarios = mysql_fetch_array($result);
         ?>
-        
+
         <form action="atualizar.php" method="post">
            Nome: <input type="text" name="nome" required  value="<?php echo $usuarios['NOME_USUARIO'] ?>"> <br/>
            Email: <input type="email" name="email" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
-           Confirma Email : <input type="email" name="confirma_email" required><br/>
+           Confirma Email : <input type="email" name="confirme_email" required><br/>
            Senha: <input type="password" name="senha" required value="<?php echo $usuarios['SENHA_USUARIO']?>"> <br/>
                      Confirme Senha : <input type="password" name="confirme_senha" required><br/>
            <select name="tipo" hidden="">
