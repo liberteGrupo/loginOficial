@@ -24,6 +24,7 @@ if($senha !== $senhaUsuario){
     $_SESSION['email']  = $email;
     $_SESSION['senha'] =  $senha;
     $_SESSION['nomeUsuario']= $array['NOME_USUARIO'];
+    $_SESSION['cod_usuario'] = $array['COD_USUARIO'];
     mysql_close();
     
     if($tipoUsuario === 'RES'){
