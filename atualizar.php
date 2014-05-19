@@ -1,15 +1,17 @@
 <?php
 include_once 'conexao/conecta.inc';
+$nome = $_POST['nome'];
 $email = $_POST['email'];
 $confirme_email = $_POST['confirme_email'];
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
+$tipoUsuario = $_POST['tipo'];
 if($senha != $confirmeSenha ){
     echo'senha nao confere! ';
     echo '<a href=frmCadastro.php> Cadastrar </a>';  
 }
 else{ 
-   
+ 
 $sql = " UPDATE usuarios SET NOME_USUARIO = '$nome',EMAIL_USUARIO='$email',
   SENHA_USUARIO='$senha',TIPO_USUARIO='$tipoUsuario'
 WHERE COD_USUARIO ='$codigo_usuario'
