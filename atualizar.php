@@ -6,6 +6,7 @@ $confirme_email = $_POST['confirme_email'];
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
 $tipoUsuario = $_POST['tipo'];
+$codigo_usuario= $_POST['codigo'];
 if($senha != $confirmeSenha ){
     echo'senha nao confere! ';
     echo '<a href=frmCadastro.php> Cadastrar </a>';  
