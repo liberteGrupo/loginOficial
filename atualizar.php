@@ -16,6 +16,7 @@ else{
 $sql = " UPDATE usuarios SET NOME_USUARIO = '$nome',EMAIL_USUARIO='$email',
   SENHA_USUARIO='$senha',TIPO_USUARIO='$tipoUsuario'
 WHERE COD_USUARIO ='$codigo_usuario'
+    
 ";
     if(mysql_query($sql)){
         echo 'Dados Atualizados com Sucesso !';
