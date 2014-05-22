@@ -21,7 +21,7 @@ echo 'Bem Vindo Srº) '.$nomeUsuario;
     <body>
         <?php
        echo'<h3> <caption>Restrito-Paginterar(a inicial </caption></h3>';
-        echo '<a href=frmAtualizar.php?codigo='.$cod_usuario.'>Alterar(Perfil) <br> </a>';  
+        echo '<a href=frmAtualizar.php?codigo='.$codigo_usuario.'>Alterar(Perfil) <br> </a>';  
 
         ?>
     </body>
