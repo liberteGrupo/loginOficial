@@ -7,7 +7,7 @@ if(isset($_POST['email']) and isset($_POST['senha']))
     $email = $_POST['email'] ;
     $senha = $_POST['senha'] ;
   //echo $email,$senha;
-$query = "SELECT * FROM usuarios WHERE EMAIL_USUARIO = '$email'";
+$query = "SELECT * FROM usuario WHERE EMAIL_USUARIO = '$email'";
 $result= mysql_query($query);
 $totalUsuario = mysql_num_rows($result);
 if($totalUsuario === 0){
