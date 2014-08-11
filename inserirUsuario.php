@@ -2,6 +2,7 @@
 include 'conexao/conecta.inc';
 $email = $_POST['email'];
 $senha =  $_POST['senha'];
+$hash = bcrypt($senha);
 $confirmeSenha = $_POST['confirme_senha'];
 $tipoUsuario = $_POST ['tipoUsuario'];
 $nome = $_POST ['nome'];

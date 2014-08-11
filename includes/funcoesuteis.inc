@@ -3,7 +3,7 @@ echo '<meta charset=utf-8>';
 function  validaAutenticacao($tipoUser,$link)
 {
     session_start();
-if(!isset($_SESSION['email']) or !isset($_SESSION['senha']))
+if(!isset($_SESSION['email']))
     {
      session_destroy();
     echo '<script> 
