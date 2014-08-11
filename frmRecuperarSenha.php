@@ -7,12 +7,10 @@
     </head>
     <body>
         <h3>Formulario Login</h3>       
-        <form method="post" action="forgotPass.php">
+        <form method="post" action="recuperarSenha.php">
            
             <label> Digite Seu email Para enviar uma Nova senha:</label><input type="email" name="email"><br/>
-            <input type="submit" name="logar"><br>
-            <input type="checkbox">
-            <a href="esqueciSenha.php">Esqueci minha Senha</a>
+            <input type="submit" name="recupera"><br>
             <br>
             <a href="frmCadastro.php"> Cadastre-se </a><br>
         </form>
