@@ -17,65 +17,60 @@
 			    $('#meu_form').validate({
 			   
 					rules:{ 
-                                             nome:{
-                                                required:true
-                                            },
-						login:{ 
-                                                    required: true,
-                                                    remote: 'includes/verificaemail.php'
-                                                    },//,
-                                                conflogin:{
-                                                  required: true,
-                                                  equalTo: "#login"
-                                                },                                
-                                             senha:{ 
-                                                 required: true
-                                                 },
-                                              confsenha:{ 
-                                                 required: true,
-                                                 equalTo: "#senha"
-                                                 },
-                                               
-                                                    /*código meu*/
-                                             termos: "required"
-                                        /*fim código meu*/
+             nome:{
+               required:true
+                   },
+						email:{ 
+                 required: true,
+                 remote: 'includes/verificaemail.php'
+                    },//,
+            confemail:{
+                 required: true,
+                 equalTo: "#login"
+                        },                                
+                  senha:{ 
+                  required: true
+                         },
+                  confsenha:{ 
+                         required: true,
+                          equalTo: "#senha"
+                      },
+                   termos: "required"
+                              
 					},
                                         
                                       
 					messages:{
-                                             nome:{ 
-                                                     required: 'Este Campo &eacute; obrigat&oacute;rio' , 
+                   nome:{ 
+                  required: 'Este Campo &eacute; obrigat&oacute;rio' , 
                                                      },
 						login:{ 
-                                                     required: 'Este Campo &eacute; obrigat&oacute;rio' , 
-                                                     remote: '<font color="red">Este Login j&aacute; est&aacute; em uso.</font>'},//,
-                                                conflogin:{
-                                                       required: "O campo confirmação de email é obrigatorio.",
-                                                       equalTo: '<font color="red">O campo confirmação de email deve ser identico ao campo email.</font>'
-                                                     },
-                                                senha:{ 
-                                                       required: 'Este Campo &eacute; obrigat&oacute;rio' 
-                                                      },
-                                                confsenha:
-                                                      { 
-                                                         required: 'Este Campo &eacute; obrigat&oacute;rio', 
-                                                         equalTo:  '<font color="red">O campo confirmação de senha deve ser identico ao campo senha.</font>'
+                   required: 'Este Campo &eacute; obrigat&oacute;rio' , 
+                   remote: '<font color="red">Este Login j&aacute; est&aacute; em uso.</font>'},//,
+             conflogin:{
+                   
+                   required: "O campo confirmação de email é obrigatorio.",
+                   equalTo: '<font color="red">O campo confirmação de email deve ser identico ao campo email.</font>'
+                        },
+             senha:{ 
+                   required: 'Este Campo &eacute; obrigat&oacute;rio' 
+                         },
+             confsenha:
+                      { 
+                   required: 'Este Campo &eacute; obrigat&oacute;rio', 
+                   equalTo:  '<font color="red">O campo confirmação de senha deve ser identico ao campo senha.</font>'
                                                       },
 					         termos: "Para se cadastrar você deve aceitar os termos de uso."
                                               }
 					});
 			
                                     });
-			
-			
-					
-					window.onload = function() {
+	window.onload = function() {
 					
                     // $('#login').keypress function(){alert("");});
 					  
                        $("#login").keypress(function() {
-
-					     $('div.loader').show();
+     $('div.loader').show();
                      });
 									
                        $("#login").focusout(function() {
@@ -94,9 +89,13 @@
     
  
     
-   
+   <?php 
+include 'conexao/conecta.inc';
+
+
+   ?>
 <h1>Cadastro de Usuário</h1>
-<form id="meu_form" action="novoUsuario.php" method="post" >
+<form id="meu_form" action="novoUsuario.php" method="POST" >
            
 		<!--Login:<br />-->
                 <label>Digite um Nome</label><br/>
@@ -125,8 +124,7 @@
             </select> <br/>
 		Senha:<br />
 		<input type="password" name="senha" id="senha"/><br />
-                <label>Confirme a Senha</label><br/>
-		<input type="password" name="confsenha" id="confsenha"/><br />
+            
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
 		<input type="submit" value="Cadastrar" />

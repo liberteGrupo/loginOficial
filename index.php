@@ -10,7 +10,7 @@ include 'conexao/conecta.inc';
         <?php
         echo'<h3> <caption>Sistema de login </caption></h3>';
         echo '<a href=frmLogin.php>logar <br> </a>';  
-        echo '<a href=frmcadastro.php>Cadastro doido</a><br>';
+        echo '<a href=frmcadastro.php>Cadastro</a><br>';
         echo '<a href=listaUsuario.php>Listar Usuario</a>';
         ?>
     </body>

@@ -1,6 +1,6 @@
    <?php 
    include 'conexao/conecta.inc';
- require 'bcrypt.php';
+include 'Bcrypt.class.php';
 // Senha digitada pelo usuário (veio do formuário)
  if($_POST['logar']){
 $senha = $_POST['senha'];
@@ -14,10 +14,9 @@ if(mysql_num_rows($result) === '0')
 }else{
 $array = mysql_fetch_array($result);
 $hash = $array['SENHA_USUARIO'];
-echo $hash;
-echo $senha;
+
 if (Bcrypt::check($senha,$hash) === $hash) {
-    echo 'Senha OK!';
+    header('Location:index.php');
 }else {
     echo 'Senha incorreta!';
 }

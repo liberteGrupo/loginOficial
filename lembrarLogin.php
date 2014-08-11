@@ -4,15 +4,8 @@ if(isset($_POST['logar']));
 if(isset($_POST['lembrar']));
 $dias = time() +3600;
 setcookie("login_digitado",$_POST['login'],$dias);
-setcookie("senha_digitada",$_POST['senha'],$dias);
-
-
+setcookie("senha_digitada",$_POST['senha'],$dias)
 ?>
-
-
-
-
-
 <form action ="" method="POST">
     
     Login: <input type="text" name="login" value="<?php echo isset($_COOKIE['login_digitado']) ? $_COOKIE['login_digitado']: ""; ?>"></input>
