@@ -7,11 +7,10 @@ $email =isset($_SESSION['email'])?$_SESSION['email']:null;
 $senha = isset($_SESSION['senha'])?$_SESSION['senha']:null;
 $nomeUsuario = isset($_SESSION['nomeUsuario'])?$_SESSION['nomeUsuario']:null;
 $cod_usuario = isset($_SESSION['cod_usuario'])?$_SESSION['cod_usuario']:null;
-
+ 
 echo'<a href=logout.php>Efetuar Logout</a>';
-/*if($nomeUsuario){    
+
 echo 'Bem Vindo Srº) '.$nomeUsuario;    
-}*/
 ?>
 <html>
     <head>
@@ -21,7 +20,7 @@ echo 'Bem Vindo Srº) '.$nomeUsuario;
     <body>
         <?php
        echo'<h3> <caption>Restrito-Paginterar(a inicial </caption></h3>';
-        echo '<a href=frmAtualizar.php?codigo='.$codigo_usuario.'>Alterar(Perfil) <br> </a>';  
+        echo '<a href=frmAtualizar.php?codigo='.$cod_usuario.'>Alterar(Perfil) <br> </a>';  
 
         ?>
     </body>

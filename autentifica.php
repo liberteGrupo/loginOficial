@@ -17,15 +17,14 @@ $array = mysql_fetch_array($result);
 $senhaUsuario = $array['SENHA_USUARIO'];
 $tipoUsuario = $array['TIPO_USUARIO'];
 if($senha !== $senhaUsuario){
-    echo '<a href=frmLogin.php>senha nao confere!</a>';
+    echo '<a href=frmcadastro.php>Cadastre-se</a>';
 }else
        {
     //aqui esta tudo certo tanto no email quanto a senha 
     $_SESSION['email']  = $email;
     $_SESSION['senha'] =  $senha;
     $_SESSION['nomeUsuario']= $array['NOME_USUARIO'];
-    $_SESSION['cod_usuario'] = $array['ID_USUARIO'];
-    $cod_usuario = $array['ID_USUARIO'];
+    $_SESSION['cod_usuario'] = $array['COD_USUARIO'];
     mysql_close();
     
     if($tipoUsuario === 'RES'){
@@ -45,7 +44,7 @@ location.href="admin/indexAdmin.php"
        }
 }else{
   echo '<script language="Javascript">
-location.href="autentica_usuario.php"
+location.href="frmcadastro.php"
 </script>';
    
 }

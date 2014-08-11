@@ -2,7 +2,7 @@
 echo '<meta charset=utf-8>';
 $hostName ='localhost';
 $userName = 'root';
-$passHost = '12345678';
+$passHost = 'theblackwolf';
 $dbName ='loginoficial3f' ;
 
 $connection = mysql_connect($hostName,$userName,$passHost);

@@ -1,6 +1,6 @@
 <?php
-include 'conexao/conecta.inc';
-$email = $_POST['email'];
+
+$email = mysql_real_escape_string($_POST['email']);
 $senha =  $_POST['senha'];
 $confirmeSenha = $_POST['confirme_senha'];
 $tipoUsuario = $_POST ['tipoUsuario'];
@@ -11,7 +11,7 @@ if($senha != $confirmeSenha){
     
 }else{ 
    
-$sql = " INSERT INTO usuarios ( NOME_USUARIO,EMAIL_USUARIO, SENHA_USUARIO,TIPO_USUARIO)";
+$sql = " INSERT INTO usuarios (NOME_USUARIO,EMAIL_USUARIO,SENHA_USUARIO,TIPO_USUARIO)";
     $sql.= " VALUES ('$nome','$email','$senha','$tipoUsuario')";
     if(mysql_query($sql)){
         echo 'Dados inseridos com Sucesso !';
