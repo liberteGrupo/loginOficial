@@ -26,7 +26,7 @@ if(mysql_query($sql)){
 echo 'Sua nova senha é : '.substr($hash,0,7);
  
 }else {
-    
+    //feito por igor ribeiro sobral
 }
 }else{
     header('Location:frmRecuperaSenha.php');
